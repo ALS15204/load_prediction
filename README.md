@@ -8,78 +8,57 @@
 *** Thanks again! Now go create something AMAZING! :D
 -->
 
-<!-- GETTING STARTED -->
-## Getting Started
+<!-- INTRODUCTION -->
+## Introduction
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This repo is prepared to share my forecasting code that predicts the hourly charge load in 2008 based on the historical 
+load data and weather information. There are two sets of data that are used in the training:
 
-### Prerequisites
+* [`amperon_ds_data 2/load_hist_data.csv`](https://github.com/ALS15204/load_prediction/blob/28e8ce61ecef660e5d0ff9e3f728a2c8e2fbb2c2/amperon_ds_data%202/load_hist_data.csv): this file records hourly load data from 2005 to 2007
+* [`amperon_ds_data 2/weather_data.csv`](https://github.com/ALS15204/load_prediction/blob/28e8ce61ecef660e5d0ff9e3f728a2c8e2fbb2c2/amperon_ds_data%202/weather_data.csv): this file records hourly temperature data from 2005 to 2007
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+The final answer is recorded in [`amperon_ds_data 2/output/probability_estimates.csv`](https://github.com/ALS15204/load_prediction/blob/28e8ce61ecef660e5d0ff9e3f728a2c8e2fbb2c2/amperon_ds_data%202/output/probability_estimates.csv)
 
-### Installation
+I describe the steps I took in [the Jupyter notebook](https://github.com/ALS15204/load_prediction/blob/28e8ce61ecef660e5d0ff9e3f728a2c8e2fbb2c2/notebook/load_prediction.ipynb)
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+<!-- INSTALLATION -->
+## Installation
+
+1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/ALS15204/load_prediction.git
    ```
-3. Install NPM packages
+2. Build venv: under the repo root
    ```sh
-   npm install
+   python3 -m venv ./
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Install requirements
+   ```sh
+   pip install -r requirements.txt
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
-<!-- USAGE EXAMPLES -->
+<!-- USAGE -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+### Running Jupyter notebook
+1.  To use Jupyter note book under the newly built venv
+    ```shell
+    python -m ipykernel install --user --name=venv
+    ```
+2. Go to the Jupyter notebook to run it
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+<!-- REFERENCES -->
+## References
 
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+I used the following references when building the model 
+1. [US Federal Holidays](https://www.timeanddate.com/holidays/us/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,9 +76,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Ronin Wu, PhD - [@RoninWu](https://twitter.com/RoninWu) - ronin@ronin-wu.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/ALS15204/load_prediction](https://github.com/ALS15204/load_prediction)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -108,6 +87,4 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+I sincerely thank Dr. Abe Stanway, the CTO of Amperon for sharing the data with me. It has been a fun exercise :)

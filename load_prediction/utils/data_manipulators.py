@@ -40,9 +40,10 @@ class Date:
     day: int
 
     def __init__(self, date_str: str):
+        self.input_str = date_str
         self.month, self.day, self.year = map(int, date_str.split(self.SEPERATOR))
         self.datetime = datetime(self.year, self.month, self.day)
-        self.is_holiday = date_str in US_FEDERAL_HOLIDAYS
+        self.is_holiday = date_str in US_FEDERAL_HOLIDAYS or self.weekday in {5, 6}
 
     @property
     def days_in_year(self) -> int:

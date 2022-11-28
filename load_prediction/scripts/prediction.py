@@ -69,12 +69,3 @@ if __name__ == "__main__":
 
     n_tries = [n for n in range(N_EXP)]
     pmap(process, n_tries, num_workers=N_WORKER)
-
-    # plt.plot(X_1["Days_of_Year"], hist_data["Load"])
-    # plt.show()
-    # plt.scatter(hist_data["Hour"], hist_data["Load"])
-    # plt.show()
-    # plt.plot(X_pred["Days_of_Year"], answers["Load"])
-    # plt.show()
-    # plt.scatter(X_pred["Hour"], answers["Load"])
-    # plt.show()

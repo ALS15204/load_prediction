@@ -14,10 +14,10 @@
 This repo is prepared to share my forecasting code that predicts the hourly charge load in 2008 based on the historical 
 load data and weather information. There are two sets of data that are used in the training:
 
-* [`amperon_ds_data 2/load_hist_data.csv`](https://github.com/ALS15204/load_prediction/blob/master/amperon_ds_data%202/load_hist_data.csv): this file records hourly load data from 2005 to 2007
-* [`amperon_ds_data 2/weather_data.csv`](https://github.com/ALS15204/load_prediction/blob/master/amperon_ds_data%202/weather_data.csv): this file records hourly temperature data from 2005 to 2007
+* [`data/load_hist_data.csv`](https://github.com/ALS15204/load_prediction/blob/master/data/load_hist_data.csv): this file records hourly load data from 2005 to 2007
+* [`data/weather_data.csv`](https://github.com/ALS15204/load_prediction/blob/master/data/weather_data.csv): this file records hourly temperature data from 2005 to 2007
 
-The final answer is recorded in [`amperon_ds_data 2/output/probability_estimates.csv`](https://github.com/ALS15204/load_prediction/blob/master/amperon_ds_data%202/output/probability_estimates.csv)
+The final answer is recorded in [`data/output/probability_estimates.csv`](https://github.com/ALS15204/load_prediction/blob/master/data/output/probability_estimates.csv)
 
 I describe the steps I took in [the Jupyter notebook](https://github.com/ALS15204/load_prediction/blob/master/notebook/load_prediction.ipynb)
 

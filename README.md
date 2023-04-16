@@ -87,4 +87,4 @@ Project Link: [https://github.com/ALS15204/load_prediction](https://github.com/A
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-I sincerely thank Dr. Abe Stanway, the CTO of Amperon for sharing the data with me. It has been a fun exercise :)
+I sincerely thank Mr Anonymous for sharing the data with me. It has been a fun exercise :)
